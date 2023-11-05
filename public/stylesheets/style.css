@@ -1,21 +1,63 @@
 body {
-  color: whitesmoke;
-  background-image: url("/images/cinema.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 85vh;
   padding: 50px;
   font: 40px "Lucida Grande", Helvetica, Arial, sans-serif;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  background-image: url("/images/cinema.jpg");
+  background-size: cover;
 }
 
 a {
   color: #00B7FF;
 }
 
-#movies {
-  background-color: white;
+/*--------------------------------------------------------------*/
+#home {
+  color: whitesmoke;
+  font: 80px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: fixed;
+  top: 40%; /* Coloca el borde superior del div en la mitad de la ventana */
+  right: 10%;
 }
+
+/*--------------------------------------------------------------*/
+#movies {
+  background-color: whitesmoke;
+  color: black;
+  text-align: left;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+.movie-item {
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/*--------------------------------------------------------------*/
+
+#details {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+}
+
+.details-container {
+  padding-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: black;
+}
+
+

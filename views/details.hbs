@@ -1,19 +1,17 @@
-<div>
+<div id="details">
 
-    <img src="{{this.oneMovie.image}}" alt="movie" height="300px">
+    <img src="{{this.oneMovie.image}}" alt="movie" height="400px">
 
-    <div id="details">
+    <div class="details-container">
         <a href="/movies/{{this._id}}">go back</a>
         <h3>{{this.oneMovie.title}}</h3>
         <h4>Director: {{this.oneMovie.director}}</h4>
-
         <h5>Stars</h5>
         <ul>
             {{#each this.oneMovie.stars}}
                 <li>{{this}}</li>
             {{/each}}
         </ul>
-
         <p>{{this.oneMovie.description}}</p>
         <h5>Showtimes:</h5>
         <ul>

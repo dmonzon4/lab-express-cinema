@@ -1,25 +1,18 @@
-{{!-- <style>
-  .movies {
-    text-align: center;
-    background-color: #f3f3f3;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-  }
-
-</style> --}}
-
-<div class="movies">
+<div id="movies">
     <h1>Ironhack Cinema</h1>
     <h2>Click on the movie to check the showtimes!</h2>
-
-    {{#each allMovies}}
-
-    <img src="{{this.image}}" alt="movie" height="200px">
-
-    <p>{{this.title}}</p>
-    <p>
-        <a href="/movie/{{this._id}}">See more</a>
-    </p>
-    {{/each}}
+    <br>
+    <br>
+    <br>
+    <div class="movies-container">
+        {{#each allMovies}}
+        <div class="movie-item">
+            <img src="{{this.image}}" alt="movie" height="200px">
+            <p>{{this.title}}</p>
+            <p>
+                <a href="/movie/{{this._id}}">See more</a>
+            </p>
+        </div>
+        {{/each}}
+    </div>
 </div>
